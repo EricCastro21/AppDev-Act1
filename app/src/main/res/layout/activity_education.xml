@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Education">
+
+    <TextView
+        android:id="@+id/txtVocational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Vocational"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtSecondary" />
+
+    <TextView
+        android:id="@+id/txtCollege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="College"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtVocational" />
+
+    <TextView
+        android:id="@+id/txtEducationalBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Educational Background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/txtElementary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Elementary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEducationalBackground" />
+
+    <TextView
+        android:id="@+id/txtGraduateStudies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Graduate Studies"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtCollege" />
+
+    <TextView
+        android:id="@+id/txtSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Secondary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtElemetary" />
+
+    <EditText
+        android:id="@+id/edittxtElemetary"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name of School"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/edittxtElementaryBasicEducation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtElementary" />
+
+    <EditText
+        android:id="@+id/edittxtSecondary"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name of School"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/edittxtSecondaryBasicEducation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondary" />
+
+    <EditText
+        android:id="@+id/edittxtVocational"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name of School"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/edittxtVocatoinalBasicEducation"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVocational" />
+
+    <EditText
+        android:id="@+id/edittxtCollege"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name of School"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/edittxtCollegeBasicEducation"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCollege" />
+
+    <EditText
+        android:id="@+id/edittxtGraduate"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name of School"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/edittxtGraduateBasicEducation"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGraduateStudies" />
+
+    <EditText
+        android:id="@+id/edittxtVocatoinalBasicEducation"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Basic Education/Degree/Course"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVocational" />
+
+    <EditText
+        android:id="@+id/edittxtCollegeBasicEducation"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Basic Education/Degree/Course"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCollege" />
+
+    <EditText
+        android:id="@+id/edittxtGraduateBasicEducation"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Basic Education/Degree/Course"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGraduateStudies" />
+
+    <EditText
+        android:id="@+id/edittxtSecondaryBasicEducation"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Basic Education/Degree/Course"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondary" />
+
+    <EditText
+        android:id="@+id/edittxtElementaryBasicEducation"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Basic Education/Degree/Course"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtElementary" />
+
+    <Button
+        android:id="@+id/btnSubmit2"
+        android:layout_width="380dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtGraduate"
+        app:layout_constraintVertical_bias="0.042" />
+</androidx.constraintlayout.widget.ConstraintLayout>
