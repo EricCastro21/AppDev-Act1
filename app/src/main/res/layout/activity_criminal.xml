@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".criminalActivity">
+
+    <TextView
+        android:id="@+id/txtListOfPreviousConviction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Of Previous Convictions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <TextView
+        android:id="@+id/txtQ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="1. Have you ever been found guilty of any administrative offense?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListOfPreviousConviction" />
+
+    <TextView
+        android:id="@+id/txtQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="2. Have you ever been criminally charged before any court?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxt1" />
+
+    <TextView
+        android:id="@+id/txtQ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="3. Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxt2" />
+
+    <TextView
+        android:id="@+id/txtQ4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="4.Pursuant to: (a) Indigenous People's Act (RA 8371): (b) Magna Carta for Disabled Persons (RA 7277): and (c) Solo Parents Welfare Act of 2000 (RA 8972). please answer the following items:"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxt3" />
+
+    <TextView
+        android:id="@+id/txtQ4A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="a. Are you a member of any indigenous group?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4" />
+
+    <TextView
+        android:id="@+id/txtQ4B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="b. Are you a person with disablity?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtA" />
+
+    <TextView
+        android:id="@+id/txtQ4C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="C. Are you a solo parent?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtB" />
+
+    <CheckBox
+        android:id="@+id/chk_yes1"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ1" />
+
+    <CheckBox
+        android:id="@+id/chk_yes2"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ2" />
+
+    <CheckBox
+        android:id="@+id/chk_yes3"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ3" />
+
+    <CheckBox
+        android:id="@+id/chk_yes_a"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4A" />
+
+    <CheckBox
+        android:id="@+id/chk_yes_c"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4C" />
+
+    <CheckBox
+        android:id="@+id/chk_yes_b"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4B" />
+
+    <CheckBox
+        android:id="@+id/chk_no1"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ1" />
+
+    <CheckBox
+        android:id="@+id/chk_no_c"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4C" />
+
+    <CheckBox
+        android:id="@+id/chk_no_b"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4B" />
+
+    <CheckBox
+        android:id="@+id/chk_no_a"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4A" />
+
+    <CheckBox
+        android:id="@+id/chk_no3"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ3" />
+
+    <CheckBox
+        android:id="@+id/chk_no2"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ2" />
+
+    <EditText
+        android:id="@+id/edittxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="If Yes, Give details..."
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ1" />
+
+    <EditText
+        android:id="@+id/edittxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="If Yes, Give details..."
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ2" />
+
+    <EditText
+        android:id="@+id/edittxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="If Yes, Give details..."
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ3" />
+
+    <EditText
+        android:id="@+id/edittxtA"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="If Yes, Give details..."
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4A" />
+
+    <EditText
+        android:id="@+id/edittxtB"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="If Yes, Give details..."
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4B" />
+
+    <EditText
+        android:id="@+id/edittxtC"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="If Yes, Give details..."
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQ4C" />
+</androidx.constraintlayout.widget.ConstraintLayout>

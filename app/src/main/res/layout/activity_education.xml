@@ -49,13 +49,13 @@
         android:id="@+id/txtElementary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Elementary"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEducationalBackground" />
+        app:layout_constraintTop_toBottomOf="@+id/chkElementay" />
 
     <TextView
         android:id="@+id/txtGraduateStudies"
@@ -233,4 +233,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittxtGraduate"
         app:layout_constraintVertical_bias="0.042" />
+
+    <CheckBox
+        android:id="@+id/chkElementay"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Elementary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEducationalBackground" />
+
+    <CheckBox
+        android:id="@+id/chkCollege"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="110dp"
+        android:text="College"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chkElementay"
+        app:layout_constraintTop_toBottomOf="@+id/txtEducationalBackground" />
+
+    <CheckBox
+        android:id="@+id/chkSecondary"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="116dp"
+        android:text="Secondary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chkElementay"
+        app:layout_constraintTop_toBottomOf="@+id/txtEducationalBackground" />
+
+    <CheckBox
+        android:id="@+id/chkGraduate"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Graduate Studies"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chkCollege"
+        app:layout_constraintTop_toBottomOf="@+id/txtEducationalBackground" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
