@@ -172,7 +172,7 @@
         app:layout_constraintEnd_toStartOf="@+id/txtTin"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+        app:layout_constraintTop_toBottomOf="@+id/rgCivilStatus" />
 
     <TextView
         android:id="@+id/txtCivilStatus"
@@ -244,7 +244,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+        app:layout_constraintTop_toBottomOf="@+id/rgCivilStatus" />
 
     <TextView
         android:id="@+id/txtGsis"
@@ -450,7 +450,7 @@
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/radioGroup3"
+        android:id="@+id/rgCivilStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
